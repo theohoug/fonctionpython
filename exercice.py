@@ -22,8 +22,16 @@ class Personnage:
             print(f"{adversaire.nom} est mort ")
         print("-------------------------------")
 
-perso1 = Personnage(input("Veuillez saisir le nom du joueur 1 :"), 100, 30)
-perso2 = Personnage(input("Veuillez saisir le nom du joueur 2 :"), 100, 30)
+    def victoire(self, mort, vivant):
+        pass
+ 
+perso1 = Personnage("Daisy", 100, 30)
+perso2 = Personnage("Mario", 100, 30)
+perso3 = Personnage("Luigi", 100, 30)
+perso4 = Personnage("Peach", 100, 30)
+perso5 = Personnage("Yoshi", 100, 30)
+perso6 = Personnage("Waluigi", 100, 30)
+perso7 = Personnage("Bowser", 100, 30)
 
 while perso1.points > 0 and perso2.points > 0:
     perso1.frapper(perso2)
